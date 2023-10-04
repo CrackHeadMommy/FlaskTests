@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+
+        <title>MB - {% block title %}Index{% endblock %}</title>
+        <script src="{{ url_for('static', filename='funkcijas.js') }}"></script>
+    
+    </head>
+    <body>
+        <a href="/">Index</a>
+        <a href="/sveiki">Sveiki!</a>
+        {% block saturs %}
+
+        <h1>Sākums</h1>
+
+        <input id="vards" type="text" placeholder="Vārds">
+        <input id="uzvards" type="text" placeholder="Uzārds">
+        <button onclick="nospiestaPoga()">Sveiki!</button>
+        
+
+
+
+        {% endblock %}
+    </body>
+</html>
